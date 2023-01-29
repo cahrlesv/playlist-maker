@@ -216,6 +216,8 @@ def submit():
     title = song.get()
     words = lyrics.get("1.0", "end-1c")
     add_song(title, words)
+    song.delete(0, END)
+    lyrics.delete(1.0, END)
 
 
 Done = Button(window, text ="Done", command = submit)
