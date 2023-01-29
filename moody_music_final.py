@@ -22,7 +22,7 @@ def add_song_helper(name, words):
     
     
     fobj = open("mchacks10songs.txt", "a")
-    fobj.write(song_title + "/0" + song_lyrics)
+    fobj.write(song_title + "\0" + song_lyrics)
 
     
     '''index = 0
